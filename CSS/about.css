@@ -1,0 +1,129 @@
+*{ margin: 0; padding: 0;}
+.navbar {
+    width: 100%;
+    height: 110px;
+    background-color: #f7f7f7;
+}
+.navbar ul{
+  
+    width: 620px;
+     margin: auto;
+    display: flex;
+     justify-content: space-between;
+     flex-flow: row nowrap ;
+    align-items: center;
+    list-style-type: none;
+    
+}
+.navbar li{
+    margin-top: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: lato;
+    color:#4d4959;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+header .navbar ul li{
+	display: inline;
+	padding:0 15px;
+}
+header .navbar ul li a{
+	display: inline-block;
+	padding:10px 0px;
+	font-size: 16px;
+	text-transform: uppercase;
+	color:#ffffff;
+	position: relative;
+}
+header .navbar ul li a::before{
+	content:'';
+	position: absolute;
+	top:100%;
+	margin-top:-5px;
+   height: 2px;
+   left:0px;
+   background-color: #f3971b;
+  width:0;
+  transition:width .5s ease;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+}
+header .navbar ul li a:hover::before{
+	width: 100%;
+}
+.about_button{
+    height: 100px;
+    background-image: url(../IMAGES/about.jpg);
+   
+}
+ .content{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ .content .about{
+     margin-top: 10px;
+    width: 200px;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 1px 1px #a2a0aa;
+    background-color :#000000;
+    opacity: 0.8;
+   
+}
+ .content .about h3{
+    font-family: lato;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:white; 
+
+}
+
+ .content .about h3:hover{
+    color: #cccccc ;
+}
+.container{
+    width: 75%;
+    height: 600px;
+    margin: auto;
+}
+
+.body_content{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_content .img_about{
+    width: 50%;
+   
+}
+.body_content .content_about{
+    margin-left: 10px;
+    width: 40%;
+
+    text-align: center;
+    
+}
+.body_content .content_about h3{
+   font-family: lato;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   line-height: 2;
+}
+.body_content .content_about p{
+    line-height: 1;
+}
+
+
