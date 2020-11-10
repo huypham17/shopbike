@@ -10,22 +10,31 @@
      <link href="CSS/slick.css" rel="stylesheet" />
     <link href="CSS/slick-theme.css" rel="stylesheet" />
     <title>Document</title>
+ 
 
-   
-  
+
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <header class="sticky">
-        <div class="navbar">
-                <ul class="nav_tittle" id="tab">
-                    <li class="tittle"><a href="./about.html" class="active" >ABOUT US</a></li>
-                    <li class="tittle"><a href="#work"> WORK</a></li>
-                    <li class="logo" ><img src="IMAGES/images/logo.png" alt=""></li>
-                    <li class="tittle"><a href="#shop">SHOP</a></li>
-                    <li class="tittle"><a href="#contact">CONTACT</a></li>
-                </ul>
-        </div>
+        <!-- <ul class="nav_tittle " id="tab">
+            <li class="tittle"><a href="./about.html" class="active" >ABOUT US</a></li>
+            <li class="tittle"><a href="#work"> WORK</a></li>
+            <li class="logo" ><img src="IMAGES/images/logo.png" alt=""></li>
+            <li class="tittle"><a href="#shop">SHOP</a></li>
+            <li class="tittle"><a href="#contact">CONTACT</a></li>
+        </ul> -->
+        <section class="navbar">
+            <ul>
+                <li class="tittle"><a href="../YEBO/about.html"  >ABOUT US</a></li>
+                <li class="tittle"><a href="#work"> WORK</a></li>
+                <li class="logo" ><img src="IMAGES/images/logo.png" alt=""></li>
+                <li class="tittle"><a href="#shop">SHOP</a></li>
+                <li class="tittle"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </section>
     </header>
+    <div class="home"></div>
      <div class="body">
          <div class="about">
          <section class="about" id="about">
@@ -38,7 +47,6 @@
              </div>
          </section>
          </div>
-
          <!-- work -->
        <div id="work">
          <section class="work1">
@@ -234,13 +242,15 @@
             </div>
            </section>
        </div>
-           
+
+         
      
 
      
        <script src="JS/jquery-1.10.2.js"></script>
        <script src="JS/jquery-migrate-1.2.1.min.js"></script>
        <script src="JS/slick.min.js"></script>
+     
 
        <script type="text/javascript">
         $(document).ready(function () {
@@ -252,11 +262,28 @@
                 autoplaySpeed: 2000,
             });
               });
-    </script>
-          
-              
-   
-    
-    
+       </script>         
+          <script type="text/javascript">
+           // Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop =0;  
+            }
+            </script>
+
 </body>
 </html>

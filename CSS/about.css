@@ -1,4 +1,7 @@
 *{ margin: 0; padding: 0;}
+
+.sp{ display: none;}
+
 .navbar {
     width: 100%;
     height: 110px;
@@ -127,3 +130,7 @@ header .navbar ul li a:hover::before{
 }
 
 
+@media only screen and (max-width: 640px) {
+    .sp{ display: block;}
+    .pc{ display: none;}
+}

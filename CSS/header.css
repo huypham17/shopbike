@@ -4,22 +4,77 @@ body{
     
   
 }
-header{
+.home{
     background-image: url(../IMAGES/imgnav.jpg);
-    width: auto;
+    width: 100%;
     height: 800px;
-    margin: 0px;
-    padding: 0px;
+    
    
 }
-.nav{
-    height: 152px;
-   
+.navbar {
+    width: 100%;
+    height: 110px;
+    position: absolute;
+}
+.navbar ul{
+    width: 100%;
+    max-width: 640px;
+    padding: 10px 0;
+    padding:0 10px;
+     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap ;
+    align-items: center;
+    list-style-type: none;
+    
+}
+.navbar li{
+    margin-top: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: lato;
+    color:#4d4959;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-.nav_tittle {
+header .navbar ul li{
+	display: inline;
+	padding:0 15px;
+}
+header .navbar ul li a{
+	display: inline-block;
+	padding:10px 0px;
+	font-size: 16px;
+	text-transform: uppercase;
+	color:#363535;
+	position: relative;
+}
+header .navbar ul li a::before{
+	content:'';
+	position: absolute;
+	top:100%;
+	margin-top:-5px;
+   height: 2px;
+   left:0px;
+   background-color: #e9581f;
+  width:0;
+  transition:width .5s ease;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+}
+header .navbar ul li a:hover::before{
+	width: 100%;
+}
+
+/* .nav_tittle {
   padding-top: 34px;
-    width: 620px;
+    max-width: 620px;
+    width: 100%;
    margin: auto;
     display: flex;
      justify-content: space-between;
@@ -36,8 +91,30 @@ header{
     font-size: 13px;
     font-weight: bold;
 }
+header .navbar ul li a::before{
+	content:'';
+	position: absolute;
+	top:100%;
+	margin-top:-5px;
+   height: 2px;
+   left:0px;
+   background-color: #f3971b;
+  width:0;
+  transition:width .5s ease;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+}
+header .navbar ul li a:hover::before{
+	width: 100%;
+} */
 /* hover */
-.nav_tittle a:hover{
+/* .nav_tittle a:hover{
     color: #a49ab1;
+} */
+
+
+@media only screen and (max-width: 640px) {
+    
 }
 
